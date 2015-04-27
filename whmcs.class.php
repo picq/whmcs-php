@@ -367,7 +367,7 @@ class WHMCS {
 		return $response;
 	}
 
-	private function api($action, $params){
+	public function api($action, $params){
 		$postfields = array();
 		$postfields['username'] = $this->username;
 		$postfields['password'] = md5($this->password);
